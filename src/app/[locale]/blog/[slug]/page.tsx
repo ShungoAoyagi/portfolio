@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import type { Metadata } from "next";
+import { BlogPostTemplate } from ".";
 
 export async function generateStaticParams() {
   const locales = ["ja", "en"];
@@ -61,10 +61,5 @@ export default async function BlogPost({
   const mdxSource = fs.readFileSync(filePath, "utf8");
   const { content, data } = matter(mdxSource);
 
-  return (
-    <article className="prose mx-auto">
-      {data.title && <h1>{data.title}</h1>}
-      <MDXRemote source={content} />
-    </article>
-  );
+  return <BlogPostTemplate content={content} data={data} />;
 }

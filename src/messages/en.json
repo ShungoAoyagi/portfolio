@@ -6,6 +6,9 @@
   "blog": {
     "title": "Blog",
     "description": "Shungo Aoyagi's blog.",
-    "back": "Back to home"
+    "back": "Back to home",
+    "slug": {
+      "backToIndex": "Back to index"
+    }
   }
 }

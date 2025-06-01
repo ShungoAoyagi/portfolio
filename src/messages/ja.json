@@ -6,6 +6,9 @@
   "blog": {
     "title": "ブログ",
     "description": "青柳俊吾のブログです。",
-    "back": "ホームに戻る"
+    "back": "ホームに戻る",
+    "slug": {
+      "backToIndex": "一覧に戻る"
+    }
   }
 }
