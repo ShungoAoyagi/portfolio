@@ -1,1 +1,11 @@
-{}
+{
+  "home": {
+    "title": "Home",
+    "description": "Shungo Aoyagi's portfolio site."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Shungo Aoyagi's blog.",
+    "back": "Back to home"
+  }
+}

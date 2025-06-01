@@ -33,7 +33,6 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  // messagesを取得
   const messages = await getMessages();
 
   return (

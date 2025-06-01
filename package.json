@@ -11,10 +11,14 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.511.0",
     "next": "15.1.5",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.3.0"
@@ -22,6 +26,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^4",
     "@eslint/eslintrc": "^3",
+    "@next/mdx": "^15.3.3",
     "@rollup/rollup-darwin-x64": "^4.41.1",
     "@storybook/addon-a11y": "^9.0.3",
     "@storybook/addon-vitest": "^9.0.3",
@@ -34,6 +39,7 @@
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
+    "eslint-plugin-mdx": "^3.4.2",
     "eslint-plugin-storybook": "^9.0.3",
     "next-intl": "^4.1.0",
     "postcss": "^8.5.4",

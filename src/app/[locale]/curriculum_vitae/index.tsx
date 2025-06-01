@@ -1,5 +1,5 @@
 import React from "react";
 
-export const CurriculumVitaeLayout: React.FC = () => {
-  return <div>CurriculumVitae</div>;
+export const CurriculumVitaeTemplate: React.FC = () => {
+  return <div>CV</div>;
 };

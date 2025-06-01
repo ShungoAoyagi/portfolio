@@ -1,3 +1,5 @@
+import { CurriculumVitaeTemplate } from ".";
+
 export default function CurriculumVitae() {
-  return <div>CV</div>;
+  return <CurriculumVitaeTemplate />;
 }

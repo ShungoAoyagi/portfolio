@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react-vite";
-import { CurriculumVitaeLayout } from ".";
+import { CurriculumVitaeTemplate } from ".";
 
 export default {
   title: "CurriculumVitae",
-  component: CurriculumVitaeLayout,
-} as Meta<typeof CurriculumVitaeLayout>;
+  component: CurriculumVitaeTemplate,
+} as Meta<typeof CurriculumVitaeTemplate>;
 
-export const Default: StoryObj<typeof CurriculumVitaeLayout> = {
-  render: () => <CurriculumVitaeLayout />,
+export const Default: StoryObj<typeof CurriculumVitaeTemplate> = {
+  render: () => <CurriculumVitaeTemplate />,
 };
