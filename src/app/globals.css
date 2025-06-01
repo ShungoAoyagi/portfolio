@@ -1,11 +1,8 @@
+/* @import "tw-animate-css"; */
 
-@import "tw-animate-css";
+@import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -46,6 +43,7 @@
 }
 
 :root {
+  font-size: 16px;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.147 0.004 49.25);
@@ -120,5 +118,72 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* 見出しタグのデフォルトスタイル */
+  h1 {
+    @apply text-3xl font-bold leading-tight mb-6;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold leading-tight mb-4;
+  }
+
+  h3 {
+    @apply text-xl font-semibold leading-tight mb-3;
+  }
+
+  h4 {
+    @apply text-lg font-medium leading-tight mb-3;
+  }
+
+  h5 {
+    @apply text-base font-medium leading-tight mb-2;
+  }
+
+  h6 {
+    @apply text-sm font-medium leading-tight mb-2;
+  }
+
+  /* 段落とテキスト */
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  /* リスト */
+  ul {
+    @apply list-disc list-inside mb-4 space-y-1;
+  }
+
+  ol {
+    @apply list-decimal list-inside mb-4 space-y-1;
+  }
+
+  li {
+    @apply leading-relaxed;
+  }
+
+  /* リンク */
+  a {
+    @apply text-primary hover:underline transition-colors;
+  }
+
+  /* コード */
+  code {
+    @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+
+  pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto mb-4;
+  }
+
+  /* 引用 */
+  blockquote {
+    @apply border-l-4 border-primary pl-4 italic text-muted-foreground mb-4;
+  }
+
+  /* 水平線 */
+  hr {
+    @apply border-border my-8;
   }
 }
